@@ -1,0 +1,19 @@
+.verticalLine {
+    border-left: 1px solid #F0F0F0;
+}
+
+.covering {
+    float: left;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 100%;
+    left: 75%;
+}
+
+.covering a {
+    background-color: #2255FF;
+    color: white;
+}
