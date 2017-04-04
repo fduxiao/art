@@ -17,10 +17,6 @@ a {
     color: black;
 }
 
-a:visited {
-    color: darkblue;
-}
-
 /* navigation */
 /*outside div*/
 div.navigation {
