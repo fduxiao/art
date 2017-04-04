@@ -1,2 +1,4 @@
 # jetbrains
 /.idea/
+# OS X cached
+.DS_Store

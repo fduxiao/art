@@ -1,0 +1,189 @@
+
+/* a left vertical line */
+.left-vertical-line {
+    border-left: 1px solid #F0F0F0;
+}
+
+/*div {*/
+    /*font-family: "Times New Roman", Times, serif;*/
+/*}*/
+
+/* all images should be of 100% with */
+img {
+    width: 100%;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+/* navigation */
+/*outside div*/
+div.navigation {
+    border-top: 2px solid #F0F0F0;
+    border-bottom: 3px solid #E0E0E0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* wrapper for the menu tab */
+div.navigation>div{
+    display: inline;
+}
+
+div.navigation>.menu-tab:hover {
+    border-top: solid #336677;
+    padding-top: 6px;
+}
+
+div.navigation > div.menu-tab {
+    padding-right: 1%;
+}
+
+div.navigation > div.menu-tab+div.menu-tab {
+    border-left: 1px solid #E0E0E0;
+    padding-left: 1%;
+}
+
+/* dropdown list */
+div.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* the content for the drop down menu */
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* showing the menu */
+div.dropdown:hover>.dropdown-content {
+    display: block;
+}
+
+/* the searching box on the right */
+div.menu-right {
+    float: right;
+}
+
+/* the input text */
+div.menu-right input[type=text] {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+
+/* the input text */
+div.menu-right input[type=text]:focus {
+    outline: none;
+}
+
+/* the searching button */
+div.menu-right button {
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    cursor: pointer;
+    margin: 0;
+    padding: 0 2px;
+}
+
+
+/* the div over the image */
+.covering {
+    float: left;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: thin solid rgba(140, 140, 140, 0.6);
+    color: white;
+    left: 56.5%;
+    top: 23.4%;
+    width: 27%;
+    height: 240px;
+}
+
+
+/* in the middle of a div */
+.outer {
+    display: table;
+    position: absolute;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
+}
+
+img.widgets {
+    width: 121px;
+    height: 76px;
+}
+
+div.widgets {
+    padding-left: 5%;
+    border-left: 1px solid #F0F0F0;
+}
+
+/* carousel.vertical */
+.vertical .carousel-inner {
+    height: 100%;
+}
+
+.carousel.vertical .item {
+    -webkit-transition: 0.6s ease-in-out top;
+    -moz-transition: 0.6s ease-in-out top;
+    -o-transition: 0.6s ease-in-out top;
+    transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+    top: 0;
+}
+
+.carousel.vertical .next {
+    top: 100%;
+}
+
+.carousel.vertical .prev {
+    top: -100%;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+    top: 0;
+}
+
+.carousel.vertical .active.left {
+    top: -100%;
+}
+
+.carousel.vertical .active.right {
+    top: 100%;
+}
+
+.carousel.vertical .item {
+    left: 0;
+}​
+

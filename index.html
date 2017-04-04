@@ -3,95 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>中外建筑与环境艺术</title>
-    <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="style.css"/>
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 </head>
 <body>
-    <div class="container"><h1>中外建筑与环境艺术 (English)</h1></div>
 
-    <nav class="container">
-        <ul class="nav nav-tabs">
-            <li role="presentation">
-                <a class="" href="#">首页</a>
-            </li>
-            <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    课程介绍 <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">课程简介</a></li>
-                    <li><a href="#">教学大纲</a></li>
-                    <li><a href="#">教学团队</a></li>
-                </ul>
-
-            </li>
-            <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    教学团队 <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Person1</a></li>
-                    <li><a href="#">Person2</a></li>
-                    <li><a href="#">Person3</a></li>
-                </ul>
-
-            </li>
-            <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    教学资源 <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">教案</a></li>
-                    <li><a href="#">画作推荐</a></li>
-                    <li><a href="#">影视推荐</a></li>
-                </ul>
-
-            </li>
-            <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    学生创作 <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">手绘设计</a></li>
-                    <li><a href="#">海报设计</a></li>
-                    <li><a href="#">模型设计</a></li>
-                </ul>
-
-            </li>
-            <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    实地考察 <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">游记简介</a></li>
-                    <li><a href="#">调研报告</a></li>
-                    <li><a href="#">调研视频</a></li>
-                </ul>
-
-            </li>
-            <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    学生社团 <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">复旦建筑与艺术协会</a></li>
-                    <li><a href="#">复旦城市环境艺术协会</a></li>
-                </ul>
-
-            </li>
-            <li role="presentation" class="navbar-right">
-                <form class="navbar-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+    <!--title and navigation bar-->
+    <div class="container">
+        <img src="assets/title.png"/>
+        <div class="navigation">
+            <div class="menu-tab">
+                <div class="dropdown">
+                    <span><a href="">首页</a></span>
+                </div>
+            </div>
+            <div class="menu-tab">
+                <div class="dropdown">
+                    <span>课程介绍</span>
+                    <div class="dropdown-content">
+                        <a href="#">课程简介</a><br/>
+                        <a href="#">教学大纲</a><br/>
+                        <div class="dropdown">
+                            <span>教学团队</span>
+                            <div class="dropdown-content">
+                                <a href="#">person1</a> <br/>
+                                <a href="#">person2</a>
+                            </div>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-            </li>
-        </ul>
+                </div>
+            </div>
+            <div class="menu-tab">
+                <div class="dropdown">
+                    <span>教学资源</span>
+                    <div class="dropdown-content">
+                        <a href="#">教案</a><br/>
+                        <a href="#">画作推荐</a><br/>
+                        <a href="#">影视推荐</a><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-tab">
+                <div class="dropdown">
+                    <span>学生创作</span>
+                    <div class="dropdown-content">
+                        <a href="#">手绘设计</a><br/>
+                        <a href="#">海报设计</a><br/>
+                        <a href="#">模型设计</a><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-tab">
+                <div class="dropdown">
+                    <span>实地考察</span>
+                    <div class="dropdown-content">
+                        <a href="#">游记简介</a><br/>
+                        <a href="#">调研报告</a><br/>
+                        <a href="#">调研视频</a><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-tab">
+                <div class="dropdown">
+                    <span>学生社团</span>
+                    <div class="dropdown-content">
+                        <a href="club/fudanjianxie.html">复旦建筑艺术协会</a><br/>
+                        <a href="#">复旦城市环境艺术协会</a><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-right">
+                <label for="search-key"></label>
+                <input type="text" id="search-key" />
+                <button>SEARCH</button>
+            </div>
+        </div>
+    </div>
 
-    </nav>
+    <br/>
+
+    <!--header carousel-->
     <div class="container">
         <div id="carousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -99,47 +94,48 @@
                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel" data-slide-to="1"></li>
                 <li data-target="#carousel" data-slide-to="2"></li>
-                <li data-target="#carousel" data-slide-to="3"></li>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <div class="covering">
-                        something to display
-                        <br/>
-                        <a href="#">click here</a>
+                    <div class="covering outer">
+                        <div class="middle">
+                            <a href="#" class="inner">
+                                一《中外建筑与环境艺术》<br/>
+                                &nbsp;&nbsp; 课程学生作品展 <br/>
+                                &nbsp;&nbsp; The Exhibition of Student's Works; <br/>
+                            </a>
+                        </div>
                     </div>
-                    <img src="assets/display1.png" />
+                    <img src="assets/headers/display1.png" />
 
                 </div>
 
                 <div class="item">
-                    <div class="covering">
-                        something to display
-                        <br/>
-                        <a href="#">click here</a>
+                    <div class="covering outer">
+                        <div class="middle">
+                            <a href="#" class="inner">
+                                二 学生出游活动剪集 <br/>
+                                &nbsp;&nbsp; Field trips organized by students; <br/>
+                            </a>
+                        </div>
                     </div>
-                    <img src="assets/display1.png" />
+                    <img src="assets/headers/display2.png" />
                 </div>
 
                 <div class="item">
-                    <div class="covering">
-                        something to display
-                        <br/>
-                        <a href="#">click here</a>
+                    <div class="covering outer">
+                        <div class="middle">
+                            <a href="#" class="inner">
+                                三 尹博恩同学在课程教师的指导下赴WUSTL深造<br/>
+                                &nbsp;&nbsp; One of our students went to WUSTL for further study on Architecture; <br/>
+                            </a>
+                        </div>
                     </div>
-                    <img src="assets/display1.png" />
+                    <img src="assets/headers/display3.png" />
                 </div>
 
-                <div class="item">
-                    <div class="covering">
-                        something to display
-                        <br/>
-                        <a href="#">click here</a>
-                    </div>
-                    <img src="assets/display1.png" />
-                </div>
             </div>
 
             <!-- Controls -->
@@ -154,43 +150,120 @@
         </div>
     </div>
 
-    <hr/>
+    <div class="container"><hr/></div>
 
+    <!--other infomation-->
     <div class="container">
         <div class="col-md-8">
             <div class="row">
-                <h2>课程简介</h2>
-                <p>containt</p>
+                <div class="container-fluid">
+                    <h2>课程简介</h2>
+                    <p>《中外建筑与环境艺术》
+                        Art of World Architecture and Environmental
+                        “中外建筑与环境艺术”是一门涵盖艺术鉴赏、艺术评论、艺术创作的通识教育课程。
+                        主要讲述中外城市建筑、景观环境发展史概论与世界著名建筑景观评价，
+                        解读与赏析古今中外建筑与环境景观审美创造的发展历程和重要成果，
+                        培养学生自身审美素养，接受美的熏陶，引发艺术想象、感悟与审美体验，使学生能够按照美的规律进行创造与生活。
+                        <a href="#"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a>
+                    </p>
+                </div>
             </div>
+
             <hr/>
             <div class="row container-fluid">
-                <div class="col-md-4">
-                    <div class="row">img1</div>
-                    <div class="row">desc1</div>
+                <div class="col-md-4 widgets">
+                    <div class="row">
+                        <img class="widgets" src="assets/widgets/rkjs.png" />
+                    </div>
+                    <div class="row">任课教师</div>
                 </div>
-                <div class="col-md-4">
-                    <div class="row">img2</div>
-                    <div class="row">desc2</div>
+                <div class="col-md-4 widgets">
+                    <div class="row">
+                        <img class="widgets" src="assets/widgets/xszp.png" />
+                    </div>
+                    <div class="row">学生作品</div>
                 </div>
-                <div class="col-md-4">
-                    <div class="row">img3</div>
-                    <div class="row">desc3</div>
+                <div class="col-md-4 widgets">
+                    <div class="row">
+                        <img class="widgets" src="assets/widgets/jxsp.png" />
+                    </div>
+                    <div class="row">教学视频</div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 verticalLine">
-            <div class="container-fluid">
-                <h4>Title</h4>
-                <div class="row">row1</div>
-                <hr/>
-                <div class="row">row2</div>
-                <hr/>
-                <div class="row">row3</div>
+        <div class="col-md-4 left-vertical-line">
+            <div id="carousel2" class="carousel slide vertical" data-ride="carousel">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="container-fluid">
+                            <h4>学生思考</h4>
+                            <hr/>
+                            <div class="row">
+                                陈一川 14307110157    上海城市审美风格演化与社会文化变迁的相互作用
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                程思茜 13307080059    上海建筑文化中两种时代话语的强势较量
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="container-fluid">
+                            <h4>学生思考</h4>
+                            <hr/>
+                            <div class="row">
+                                赵婷婷 13307110529    上海城隍庙与徐家汇天主教堂对比中透射出的中西文化差异探究
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                陆中琰 15307130321    上海环球金融中心形态美学赏析
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                杨子强 15307100031    卢浮宫建筑赏析
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item ">
+                        <div class="container-fluid">
+                            <h4>学生思考</h4>
+                            <hr/>
+                            <div class="row">
+                                林孙桂 15301010067    现代建筑中利用自然元素的方式探究
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                符雪聪 14300200018    从工厂改建展览馆看上海城市审美变迁
+                            </div>
+                            <hr/>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="container-fluid">
+                            <h4>学生问答</h4>
+                            <div class="row">高璐 14307130402</div>
+                            <div class="row">华婷 16301010026</div>
+                            <div class="row">黄尧 15307130284</div>
+                            <div class="row">梁鑫 15307130300</div>
+                            <div class="row">路童跃 13300110101</div>
+                            <div class="row">盛绮练 15301050077</div>
+                            <div class="row">吴嘉雯 15307130412</div>
+                            <div class="row">章俊鑫 15307130097</div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
 
-    <hr/>
+    <div class="container"><hr/></div>
 
 </body>
 </html>
