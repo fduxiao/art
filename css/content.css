@@ -1,0 +1,10 @@
+.content img {
+    height: auto;
+    width: auto;
+    margin: 2%;
+}
+
+.content p {
+    text-indent: 25px;
+}
+
