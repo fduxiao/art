@@ -16,10 +16,11 @@
 <!--title and navigation bar-->
 <div class="container">
     <img src="../assets/title.png"/>
+    <br/>
     <div class="navigation">
         <div class="menu-tab">
             <div class="dropdown">
-                <span><a href="../">首页</a></span>
+                <span><a href="">首页</a></span>
             </div>
         </div>
         <div class="menu-tab">
@@ -33,9 +34,9 @@
                     <div class="dropdown">
                         <span>教学团队</span>
                         <div class="dropdown-content">
-                            <a href="../kcjs/zjw.html">张榉文</a><br/>
-                            <a href="../kcjs/gy.html">高燕</a><br/>
-                            <a href="../kcjs/bcl.html">包春雷</a><br/>
+                            <a href="../kcjs/zjw.html">张榉文</a> <br/>
+                            <a href="../kcjs/gy.html">高燕</a> <br/>
+                            <a href="../kcjs/bcl.html">包春雷</a> <br/>
                         </div>
                     </div>
                 </div>
@@ -53,11 +54,17 @@
         </div>
         <div class="menu-tab">
             <div class="dropdown">
+                <span><a href="../sjjx/sjjx.html">实践教学</a></span>
+            </div>
+        </div>
+        <div class="menu-tab">
+            <div class="dropdown">
                 <span>学生创作</span>
                 <div class="dropdown-content">
                     <a href="../xscz/upsj.html">U盘设计</a><br/>
                     <a href="../xscz/hbsj.html">海报设计</a><br/>
                     <a href="../xscz/qsgz.html">寝室改造</a><br/>
+                    <a href="../xscz/lw.html">论文</a><br/>
                     <div class="dropdown">
                         <span>学生画作</span>
                         <div class="dropdown-content">
@@ -66,11 +73,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="menu-tab">
-            <div class="dropdown">
-                <span><a href="../sjjx/sjjx.html">实践教学</a></span>
             </div>
         </div>
         <div class="menu-tab">
@@ -127,13 +129,31 @@
 
     </div>
     <div class="col-md-10 left-vertical-line content">
-        <a href="assets/jxdg.pdf">
-            <h2>课程大纲(点击下载)</h2>
-        </a>
+        <object id="pdf" data="assets/jxdg.pdf" type="application/pdf" width="100%" height="100%">
+        </object>
     </div>
 </div>
 
 <div class="container"><hr/></div>
 
 </body>
+<script>
+    $(document).ready(function () {
+        var pdf = $('#pdf');
+        pdf.parents().css('height', '100%');
+        var r = function () {
+            var h = pdf.parent().height();
+            pdf.height(h);
+        };
+        $(window).resize(function () {
+            r();
+        });
+
+        pdf.ready(function () {
+            r();
+        });
+
+        r();
+    });
+</script>
 </html>

@@ -15,6 +15,7 @@
     <!--title and navigation bar-->
     <div class="container">
         <img src="assets/title.png"/>
+        <br/>
         <div class="navigation">
             <div class="menu-tab">
                 <div class="dropdown">
@@ -52,11 +53,17 @@
             </div>
             <div class="menu-tab">
                 <div class="dropdown">
+                    <span><a href="sjjx/sjjx.html">实践教学</a></span>
+                </div>
+            </div>
+            <div class="menu-tab">
+                <div class="dropdown">
                     <span>学生创作</span>
                     <div class="dropdown-content">
                         <a href="xscz/upsj.html">U盘设计</a><br/>
                         <a href="xscz/hbsj.html">海报设计</a><br/>
                         <a href="xscz/qsgz.html">寝室改造</a><br/>
+                        <a href="xscz/lw.html">论文</a><br/>
                         <div class="dropdown">
                             <span>学生画作</span>
                             <div class="dropdown-content">
@@ -65,11 +72,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="menu-tab">
-                <div class="dropdown">
-                    <span><a href="sjjx/sjjx.html">实践教学</a></span>
                 </div>
             </div>
             <div class="menu-tab">
@@ -103,7 +105,6 @@
         </div>
     </div>
 
-    <br/>
 
     <!--header carousel-->
     <div class="container">
@@ -113,6 +114,7 @@
                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel" data-slide-to="1"></li>
                 <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -121,7 +123,8 @@
                     <div class="covering outer">
                         <div class="middle">
                             <a href="#" class="inner">
-                                一《中外建筑与环境艺术》<br/>
+                                一《中外建筑与环境艺术》
+                                <br/>
                                 &nbsp;&nbsp; 课程学生作品展 <br/>
                                 &nbsp;&nbsp; The Exhibition of Student's Works; <br/>
                             </a>
@@ -155,6 +158,18 @@
                     <img src="assets/headers/display3.png" />
                 </div>
 
+                <div class="item">
+                    <div class="covering outer">
+                        <div class="middle">
+                            <a href="#" class="inner">
+                                课程设置<br/>
+                                &nbsp;&nbsp; One of our students went to WUSTL for further study on Architecture; <br/>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="assets/headers/display4.png" />
+                </div>
+
             </div>
 
             <!-- Controls -->
@@ -168,9 +183,37 @@
             <!--</a>-->
         </div>
     </div>
-
-    <div class="container"><hr/></div>
-
+    <br/>
+    <div class="container-fluid" style="background-color: black">
+        <br/>
+        <div class="container">
+            <div class="col-md-4 widgets">
+                <a href="kcjs/zjw.html">
+                    <div class="row">
+                        <img class="widgets" src="assets/widgets/rkjs.png" />
+                    </div>
+                    <div class="row">任课教师</div>
+                </a>
+            </div>
+            <div class="col-md-4 widgets">
+                <a href="xscz/lmzp.html">
+                    <div class="row">
+                        <img class="widgets" src="assets/widgets/xszp.png" />
+                    </div>
+                    <div class="row">学生作品</div>
+                </a>
+            </div>
+            <div class="col-md-4 widgets">
+                <a href="jxzy/jxsp.html">
+                    <div class="row">
+                        <img class="widgets" src="assets/widgets/jxsp.png" />
+                    </div>
+                    <div class="row">教学视频</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br/>
     <!--other infomation-->
     <div class="container">
         <div class="col-md-8">
@@ -187,43 +230,15 @@
                     </p>
                 </div>
             </div>
-
-            <hr/>
-            <div class="row container-fluid">
-                <div class="col-md-4 widgets">
-                    <a href="kcjs/zjw.html">
-                        <div class="row">
-                            <img class="widgets" src="assets/widgets/rkjs.png" />
-                        </div>
-                        <div class="row">任课教师</div>
-                    </a>
-                </div>
-                <div class="col-md-4 widgets">
-                    <a href="xscz/lmzp.html">
-                        <div class="row">
-                            <img class="widgets" src="assets/widgets/xszp.png" />
-                        </div>
-                        <div class="row">学生作品</div>
-                    </a>
-                </div>
-                <div class="col-md-4 widgets">
-                    <a href="jxzy/jxsp.html">
-                        <div class="row">
-                            <img class="widgets" src="assets/widgets/jxsp.png" />
-                        </div>
-                        <div class="row">教学视频</div>
-                    </a>
-                </div>
-            </div>
         </div>
         <div class="col-md-4 left-vertical-line">
             <div class="row container-fluid">
-               <h4><a href="xsskywd/xswd.pdf">学生问答</a></h4>
+                <h4><a href="xsskywd/xswd.pdf">学生问答</a></h4>
             </div>
             <hr/>
             <div class="row container-fluid">
                 <h4>学生思考</h4>
-                <div id="carousel2" class="carousel slide vertical" data-ride="carousel">
+                <div id="carousel2" class="carousel slide vertical" data-ride="carousel" data-interval="10000">
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
@@ -289,7 +304,23 @@
         </div>
     </div>
 
+
     <div class="container"><hr/></div>
 
 </body>
+<script>
+    $(document).ready(function () {
+        var c = $(".covering");
+        var p = c.parent();
+        var r = function () {
+            var h = p.height();
+            c.height(h * 0.6);
+        };
+        $(window).resize(function () {
+            r();
+        });
+        r();
+    });
+
+</script>
 </html>

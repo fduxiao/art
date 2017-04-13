@@ -20,29 +20,33 @@ a {
 /* navigation */
 /*outside div*/
 div.navigation {
-    border-top: 2px solid #F0F0F0;
-    border-bottom: 3px solid #E0E0E0;
     padding-top: 3px;
     padding-bottom: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #55BBEE;
+
 }
 
 /* wrapper for the menu tab */
 div.navigation>div{
     display: inline;
+    font-size: 18px;
 }
 
-div.navigation>.menu-tab:hover {
-    border-top: solid #336677;
-    padding-top: 6px;
+div.navigation > .menu-tab:hover {
+    /*border-top: solid #336677;*/
+    /*padding-top: 6px;*/
 }
 
 div.navigation > div.menu-tab {
     padding-right: 1%;
+    padding-left: 1%;
+
 }
 
 div.navigation > div.menu-tab+div.menu-tab {
-    border-left: 1px solid #E0E0E0;
-    padding-left: 1%;
+    border-left: 1px solid #FFFFFF;
 }
 
 /* dropdown list */
@@ -97,18 +101,23 @@ div.menu-right button {
 }
 
 
+.item {
+    height: 100%;
+}
+
 /* the div over the image */
 .covering {
     float: left;
     position: absolute;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.6);
-    border: thin solid rgba(140, 140, 140, 0.6);
+    background-color: rgba(96, 96, 96, 0.4);
+    border: thin solid rgba(255, 255, 255, 1);
     color: white;
     left: 56.5%;
-    top: 23.4%;
     width: 27%;
-    height: 240px;
+    top: 20%;
+    padding: 1%;
+    font-size: 20px;
 }
 
 
@@ -128,8 +137,8 @@ div.menu-right button {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: rgba(0, 0, 0, 0.8);
-    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
 }
 
 img.widgets {
