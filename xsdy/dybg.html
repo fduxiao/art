@@ -2,9 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>调研报告</title>
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/content.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 </head>
 <body>
 
+<!--title and navigation bar-->
+<div class="container">
+    <img src="../assets/title.png"/>
+    <br/>
+    <div class="navigation">
+        <div class="menu-tab">
+            <div class="dropdown">
+                <span><a href="../index.html">首页</a></span>
+            </div>
+        </div>
+        <div class="menu-tab">
+            <div class="dropdown">
+                <span>课程介绍</span>
+                <div class="dropdown-content">
+                    <a href="../kcjs/kcjj.html">课程简介</a><br/>
+                    <a href="../kcjs/jxdg.html">教学大纲</a><br/>
+                    <a href="../kcjs/jxffysd.html">教学方法与手段</a><br/>
+                    <a href="../kcjs/kcznd.html">课程重难点</a><br/>
+                    <div class="dropdown">
+                        <span>教学团队</span>
+                        <div class="dropdown-content">
+                            <a href="../kcjs/zjw.html">张榉文</a> <br/>
+                            <a href="../kcjs/gy.html">高燕</a> <br/>
+                            <a href="../kcjs/bcl.html">包春雷</a> <br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-tab">
+            <div class="dropdown">
+                <span>教学资源</span>
+                <div class="dropdown-content">
+                    <a href="../jxzy/jxja.html">教学简案</a><br/>
+                    <a href="../jxzy/xsbj.html">学生笔记</a><br/>
+                    <a href="../jxzy/jxsp.html">教学视频</a><br/>
+                </div>
+            </div>
+        </div>
+        <div class="menu-tab">
+            <div class="dropdown">
+                <span><a href="../sjjx/sjjx.html">实践教学</a></span>
+            </div>
+        </div>
+        <div class="menu-tab">
+            <div class="dropdown">
+                <span>学生创作</span>
+                <div class="dropdown-content">
+                    <a href="../xscz/upsj.html">U盘设计</a><br/>
+                    <a href="../xscz/hbsj.html">海报设计</a><br/>
+                    <a href="../xscz/qsgz.html">寝室改造</a><br/>
+                    <a href="../xscz/lw.html">论文</a><br/>
+                    <div class="dropdown">
+                        <span>学生画作</span>
+                        <div class="dropdown-content">
+                            <a href="../xscz/lmzp.html">临摹作品</a> <br/>
+                            <a href="../xscz/xsxxsj.html">学生肖像设计</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-tab">
+            <div class="dropdown">
+                <span>学生调研</span>
+                <div class="dropdown-content">
+                    <a href="../xsdy/wckc.html">外出考察</a><br/>
+                    <a href="../xsdy/dybg.html">调研报告</a><br/>
+                </div>
+            </div>
+        </div>
+        <div class="menu-tab">
+            <div class="dropdown">
+                <span><a href="../hjzp/hjzp.html">获奖作品</a></span>
+            </div>
+        </div>
+        <div class="menu-tab">
+            <div class="dropdown">
+                <span>学生社团</span>
+                <div class="dropdown-content">
+                    <a href="../xsst/fdjx.html">复旦建筑艺术协会</a><br/>
+                    <a href="../xsst/fdhy.html">复旦城市环境艺术协会</a><br/>
+                </div>
+            </div>
+        </div>
+        <div class="menu-right">
+            <label for="search-key"></label>
+            <input type="text" id="search-key" />
+            <button>SEARCH</button>
+        </div>
+    </div>
+</div>
+
+<br/>
+
+<div class="container">
+    <div class="col-md-2">
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a href="wckc.html">外出考察</a></li>
+            <li role="presentation" class="active"><a href="dybg.html">调研报告</a></li>
+        </ul>
+
+    </div>
+    <div class="col-md-10 left-vertical-line content">
+        <object id="pdf" data="assets/dybg.pdf" type="application/pdf" width="100%" height="100%">
+        </object>
+    </div>
+</div>
+
+<div class="container"><hr/></div>
+
 </body>
+<script>
+    $(document).ready(function () {
+        var pdf = $('#pdf');
+        pdf.parents().css('height', '100%');
+        var r = function () {
+            var h = pdf.parent().height();
+            pdf.height(h);
+        };
+        $(window).resize(function () {
+            r();
+        });
+
+        pdf.ready(function () {
+            r();
+        });
+
+        r();
+    });
+</script>
 </html>

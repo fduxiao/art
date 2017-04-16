@@ -146,9 +146,28 @@ img.widgets {
     height: 76px;
 }
 
+.black {
+    background-color: black;
+    color: white;
+}
+
+.black * {
+    color: white;
+}
+
+.black a:hover {
+    text-decoration: none;
+    color: lightblue;
+}
+
 div.widgets {
     padding-left: 5%;
-    border-left: 1px solid #F0F0F0;
+    color: white;
+    text-align: center;
+}
+
+div.widgets * {
+    color: white;
 }
 
 /* carousel.vertical */
